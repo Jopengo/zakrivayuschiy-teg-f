@@ -48,11 +48,11 @@
   gap: 16px;
 }
 
-  .modal__icon {
-    flex-shrink: 0;
-    inline-size: 39px;
-    block-size: 39px;
-  }
+.modal__icon {
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
+}
 
 .modal__button {
   inline-size: 100%;
@@ -61,18 +61,17 @@
 .floppy {
   max-block-size: 21px;
   max-inline-size: 21px;
-  display: block;
   fill: var(--button-text-color);
   mix-blend-mode: difference;
 }
 
-.floppy_modal{
-    max-block-size: 87.25px;
-    max-inline-size: 87.25px;
-    display: block;
-    fill: var(--button-text-color);
-    mix-blend-mode: difference;
-  }
+.floppy_modal {
+  max-block-size: 87.25px;
+  max-inline-size: 87.25px;
+  display: block;
+  fill: var(--button-text-color);
+  mix-blend-mode: difference;
+}
 
 .header {
   display: grid;
@@ -136,7 +135,6 @@
   text-shadow: 0 0 1px var(--page-background-color, #ffffff);
   inset-inline-end: 20px;
   inset-block-start: 24px;
-
   mix-blend-mode: hard-light;
 }
 
@@ -162,7 +160,7 @@
   justify-content: end;
   align-items: stretch;
   gap: 5px;
-  padding: 25px 20px 19px 25px;
+  padding: 25px 21px 18px 25px;
   margin-left: 100px;
 }
 
@@ -293,15 +291,18 @@
   justify-content: center;
   text-align: center;
   gap: 8px;
-  padding: 25px 15px;
+  padding:15px;
   width: 335px;
-  height: 51px;
-}
+  }
 
 .button__text,
 .button__icon {
   color: var(--button-text-color, #ffffff);
   mix-blend-mode: difference;
+}
+
+.button__text{
+  white-space: nowrap;
 }
 
 .button__icon {
@@ -352,23 +353,23 @@
   .button--save {
     flex-direction: column;
     width: 306px;
-    height: 104px;
   }
 
   .floppy {
-    max-block-size: 39px;
-  max-inline-size: 39px;
+    max-block-size: 30px;
+    max-inline-size: 30px;
+  }
+
+  .card__img-label {
+    inset-inline-end: 9px;
+    inset-block-start: 24px;
   }
 }
 
-@supports (
-  (-webkit-text-stroke: 1px var(--page-background-color, #ffffff)) or
-    (text-stroke: 1px var(--page-background-color, #ffffff))
-) {
+@supports ((-webkit-text-stroke: 1px var(--page-background-color, #ffffff)) or (text-stroke: 1px var(--page-background-color, #ffffff))) {
   .card__img-label {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--page-background-color, #ffffff);
     text-stroke: 1px var(--page-background-color, #ffffff);
   }
 }
-
