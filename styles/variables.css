@@ -22,6 +22,6 @@
     --like-sparks-color: #ff0000;
   
     --headings-font-weight: 700;
-  
+    --favicon-light-path: "./svg/favicon.svg";
     --button-text-color: var(--page-background-color, #fff);
   }
