@@ -149,7 +149,7 @@
 
 .card__content {
   display: grid;
-  gap: 27px;
+  gap: 28px;
   border-block-start: 2px solid var(--text-color, #000000);
   padding: 25px 30px 4px 25px;
   font-size: 18px;
@@ -248,7 +248,7 @@
   position: relative;
   z-index: 1;
   border: 2px solid var(--text-color, #000000);
-  padding: 10px 36px;
+  padding: 10px 35px;
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   font-size: 14px;
   text-transform: inherit;
